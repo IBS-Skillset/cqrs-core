@@ -1,7 +1,7 @@
-package com.happystay.cqrs.core.infrastucture;
+package com.happystays.cqrs.core.infrastucture;
 
-import com.happystay.cqrs.core.commands.BaseCommand;
-import com.happystay.cqrs.core.commands.CommandHandlerMethod;
+import com.happystays.cqrs.core.commands.BaseCommand;
+import com.happystays.cqrs.core.commands.CommandHandlerMethod;
 
 public interface CommandDispatcher {
 

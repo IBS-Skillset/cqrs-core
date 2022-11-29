@@ -1,4 +1,4 @@
-package com.happystay.cqrs.core.messages;
+package com.happystays.cqrs.core.messages;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
