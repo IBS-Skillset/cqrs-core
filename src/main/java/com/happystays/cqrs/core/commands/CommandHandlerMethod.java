@@ -1,4 +1,4 @@
-package com.happystay.cqrs.core.commands;
+package com.happystays.cqrs.core.commands;
 
 @FunctionalInterface
 public interface CommandHandlerMethod<T extends BaseCommand> {
