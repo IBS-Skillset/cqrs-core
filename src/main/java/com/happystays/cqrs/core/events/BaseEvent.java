@@ -1,5 +1,6 @@
-package com.happystays.cqrs.core.messages;
+package com.happystays.cqrs.core.events;
 
+import com.happystays.cqrs.core.messages.Message;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +10,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-public abstract class Message   {
-    private String id;
+public abstract class BaseEvent extends Message {
+    private int version;
 }
