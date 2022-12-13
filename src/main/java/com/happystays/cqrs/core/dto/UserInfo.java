@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class UserInfo {
+    private String userId;
     private String prefix;
     private String givenName;
     private String surName;
