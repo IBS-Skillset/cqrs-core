@@ -6,7 +6,7 @@ import lombok.Data;
 public class PnrInfo {
 
     private String bookingCode;
-    private String bookingDesc;
+    private String bookingDescription;
     private String bookingState;
     private String confirmationNumber;
 
