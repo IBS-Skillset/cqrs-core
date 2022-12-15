@@ -1,6 +1,8 @@
 package com.happystays.cqrs.core.commands;
 
+import com.happystays.cqrs.core.dto.BookResponse;
+
 @FunctionalInterface
 public interface CommandHandlerMethod<T extends BaseCommand> {
-    void handle(T command);
+    BookResponse handle(T command);
 }
