@@ -1,7 +1,6 @@
 package com.happystays.cqrs.core.events;
 
 import com.happystays.cqrs.core.dto.events.successevent.Pnr;
-import com.happystays.cqrs.core.dto.events.successevent.Trip;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,5 +13,5 @@ import java.util.List;
 @AllArgsConstructor
 @SuperBuilder
 public class BookingSuccessEvent extends BaseEvent {
-    private Trip trip;
+    private List<Pnr> pnrList;
 }
