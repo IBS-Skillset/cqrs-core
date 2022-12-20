@@ -1,6 +1,7 @@
 package com.happystays.cqrs.core.domain;
 
 import com.happystays.cqrs.core.events.BaseEvent;
+import com.happystays.cqrs.core.events.BookingSuccessEvent;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public abstract class AggregateRoot {
     protected String id;
     private int version = -1;
 
-    private final List<BaseEvent> changes = new ArrayList<>();
+    private final List<BookingSuccessEvent> changes = new ArrayList<>();
     private final Logger logger = Logger.getLogger(AggregateRoot.class.getName());
 
     public String getId() {
@@ -27,7 +28,7 @@ public abstract class AggregateRoot {
         this.version = version;
     }
 
-    public List<BaseEvent> getUncommittedChanges() {
+    public List<BookingSuccessEvent> getUncommittedChanges() {
         return this.changes;
     }
 
@@ -46,7 +47,7 @@ public abstract class AggregateRoot {
             logger.log(Level.SEVERE, "Error applying event to aggregate", e);
         } finally {
             if (isNewEvent) {
-                changes.add(event);
+                changes.add((BookingSuccessEvent) event);
             }
         }
     }
@@ -54,8 +55,5 @@ public abstract class AggregateRoot {
     public void raiseEvent(BaseEvent event) {
         applyChange(event, true);
     }
-
-    public void replayEvents(Iterable<BaseEvent> events) {
-        events.forEach(event -> applyChange(event, false));
-    }
+    
 }

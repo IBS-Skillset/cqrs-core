@@ -1,4 +1,4 @@
-package com.happystays.cqrs.core.dto;
+package com.happystays.cqrs.core.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

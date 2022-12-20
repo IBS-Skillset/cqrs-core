@@ -1,5 +1,6 @@
-package com.happystays.cqrs.core.dto;
+package com.happystays.cqrs.core.dto.request;
 
+import com.happystays.cqrs.core.dto.common.Address;
 import lombok.Data;
 
 @Data
