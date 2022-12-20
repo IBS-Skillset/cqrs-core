@@ -1,4 +1,4 @@
-package com.happystays.cqrs.core.dto;
+package com.happystays.cqrs.core.dto.common;
 
 import lombok.Data;
 

@@ -1,5 +1,7 @@
-package com.happystays.cqrs.core.dto;
+package com.happystays.cqrs.core.dto.response;
 
+import com.happystays.cqrs.core.dto.request.PnrInfo;
+import com.happystays.cqrs.core.dto.common.ResponseStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
