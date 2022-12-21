@@ -1,6 +1,5 @@
-package com.happystays.cqrs.core.events;
+package com.happystays.cqrs.core.events.eventstoremodel;
 
-import com.happystays.cqrs.core.dto.events.eventmodel.PnrEventModel;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;

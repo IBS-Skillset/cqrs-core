@@ -1,7 +1,7 @@
 package com.happystays.cqrs.core.infrastucture;
 
-import com.happystays.cqrs.core.events.BookingSuccessEvent;
+import com.happystays.cqrs.core.events.BaseEvent;
 
 public interface EventStore {
-    public void saveEvents(String aggregateId, Iterable<BookingSuccessEvent> events, int expectedVersion);
+    public void saveEvents(String aggregateId, BaseEvent events, int expectedVersion);
 }
