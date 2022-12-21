@@ -1,4 +1,4 @@
-package com.happystays.cqrs.core.dto.events.eventmodel;
+package com.happystays.cqrs.core.events.eventstoremodel;
 
 import lombok.Builder;
 import lombok.Data;
