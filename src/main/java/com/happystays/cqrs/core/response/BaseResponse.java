@@ -1,4 +1,4 @@
-package com.happystays.cqrs.core.dto.response;
+package com.happystays.cqrs.core.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +9,6 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BaseResponse {
+public abstract class BaseResponse {
     private String message;
 }
