@@ -27,8 +27,8 @@ public abstract class AggregateRoot {
         this.version = version;
     }
 
-    public BaseEvent getUncommittedChanges() {
-        return this.changes.get(0);
+    public List<BaseEvent> getUncommittedChanges() {
+        return this.changes;
     }
 
     public void markChangesAsCommitted() {
