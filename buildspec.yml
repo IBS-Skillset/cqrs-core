@@ -14,5 +14,6 @@ phases:
       - aws --version
   build:
     commands:
-      - export CODEARTIFACT_TOKEN=`aws codeartifact get-authorization-token --domain ${CODEARTIFACT_DOMAIN} --query authorizationToken --output text`
+      - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain ibsplc --domain-owner ${AWS_ACCOUNT_ID} --region ${AWS_DEFAULT_REGION} --query authorizationToken --output text`
       - mvn -s settings.xml clean package deploy
+
