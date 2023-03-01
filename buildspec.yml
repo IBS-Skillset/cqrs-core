@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - echo $AWS_DEFAULT_REGION
+      - echo $AWS_ACCOUNT_ID
+      - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - aws --version
+  build:
+    commands:
+      - export CODEARTIFACT_TOKEN=`aws codeartifact get-authorization-token --domain ${CODEARTIFACT_DOMAIN} --query authorizationToken --output text`
+      - mvn -s settings.xml clean package deploy
