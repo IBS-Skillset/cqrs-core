@@ -34,11 +34,12 @@
 		</dependency>
 	</dependencies>
 
+
 	<distributionManagement>
 		<repository>
-			<id>skillset-cqrs-core</id>
-			<name>skillset-cqrs-core</name>
-			<url>https://skillset-645884557743.d.codeartifact.ap-south-1.amazonaws.com/maven/cqrs-core/</url>
+			<id>ibsplc-cqrs-core</id>
+			<name>ibsplc-cqrs-core</name>
+			<url>https://ibsplc-306472407007.d.codeartifact.ap-south-1.amazonaws.com/maven/cqrs-core/</url>
 		</repository>
 	</distributionManagement>
 
